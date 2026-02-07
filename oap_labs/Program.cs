@@ -12,7 +12,8 @@ namespace oap_labs
             Console.WriteLine("\nВыберите лабораторную работу:");
             Console.WriteLine("1 - Лабораторная №1 (Программы линейной структуры)");
             Console.WriteLine("2 - Лабораторная №2 (Отладка приложений)");
-            Console.Write("\nВаш выбор (1 или 2): ");
+            Console.WriteLine("3 - Лабораторная №2 (Дополнительные упражнения)");
+            Console.Write("\nВаш выбор (1, 2 или 3): ");
             
             string choice = Console.ReadLine();
             Console.WriteLine();
@@ -31,6 +32,12 @@ namespace oap_labs
                     Console.WriteLine("Запуск лабораторной работы №2");
                     Console.WriteLine("==============================\n");
                     DebugLab.RunDebugExercises();
+                    break;
+                    
+                case "3":
+                    Console.WriteLine("Запуск дополнительных упражнений");
+                    Console.WriteLine("=================================\n");
+                    AdditionalDebug.DebugComplexTask();
                     break;
                     
                 default:
