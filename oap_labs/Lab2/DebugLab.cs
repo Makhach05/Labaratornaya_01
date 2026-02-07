@@ -85,8 +85,8 @@ namespace oap_labs.Lab2
             int discountPercent = 15;
             
             // ИСПРАВЛЕНО: правильные формулы расчета
-            double discountAmount = price * discountPercent / 100; // Было: price / discountPercent
-            double finalPrice = price - discountAmount; // Было: price + discountAmount
+            double discountAmount = price * discountPercent / 100;
+            double finalPrice = price - discountAmount;
             
             Console.WriteLine($"Цена: {price} руб.");
             Console.WriteLine($"Скидка: {discountPercent}%");
